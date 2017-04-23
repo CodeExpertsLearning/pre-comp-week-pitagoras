@@ -1,0 +1,13 @@
+<?php require __DIR__ . '/includes/header.phtml';?>
+	<div class="container">
+		<h1>Index Page</h1>
+		<?php foreach ($produtos as $value):?>
+			<li>
+				<a href="/pitagora_wk/produtos/<?=$value['id'];?>">
+					<?=$value['name'];?>
+					<p class="btn btn-success">OK</p>
+				</a>
+			</li>
+		<?php endforeach; ?>
+	</div>
+<?php require __DIR__ . '/includes/footer.phtml';?>

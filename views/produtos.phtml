@@ -1,0 +1,11 @@
+<?php require __DIR__ . '/includes/header.phtml';?>
+
+	<div class="container">
+		<h1>Produto <?=$produto['name'];?></h1>
+	
+		<p>R$ <?=number_format($produto['price'], 2, ',', '.');?></p>
+
+		<p>Criado em <?=date('d/m/Y', strtotime($produto['created_at']));?></p>
+		
+	</div>
+<?php require __DIR__ . '/includes/footer.phtml';?>>
